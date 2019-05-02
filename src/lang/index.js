@@ -33,7 +33,7 @@ export function getLanguage() {
 
   const locales = Object.keys(messages)
 
-  //选第一个
+  // 选第一个
   for (const locale of locales) {
     if (language.indexOf(locale) > -1) {
       return locale
