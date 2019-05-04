@@ -15,17 +15,28 @@ export const constantRoutes = [
     path: '/',
     component: Layout,
     name: 'adasd',
+    meta: {
+      title: 'example',
+      icon: 'example'
+    },
     children: [
+      {
+        path: 'try',
+        component: () => import('@/views/login/index'),
+        name: 'Guide',
+        meta: { title: 'Guide', icon: 'dashboard', affix: true }
+      },
       {
         path: 'asdas',
         component: () => import('@/views/login/index'),
         name: 'Dashboard',
+        hidden: true,
         meta: { title: 'dashboard', icon: 'dashboard', affix: true }
       },
       {
-        path: 'dashboard',
+        path: 'qwe',
         component: () => import('@/views/login/index'),
-        name: 'Guide',
+        name: 'sdasd',
         meta: { title: 'Guide', icon: 'dashboard', affix: true }
       }
     ]

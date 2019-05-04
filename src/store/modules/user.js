@@ -45,7 +45,6 @@ const actions = {
   },
 
   getInfo(event) {
-    console.log(event)
     const { commit, state } = event
     return new Promise((resolve, reject) => {
       getInfo(state.token).then(response => {
